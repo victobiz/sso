@@ -1,9 +1,13 @@
+"use client";
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-// import { useRouter } from "next/navigation";
-// import { FormEvent } from 'react'
+import { FormEvent } from 'react'
 import { CardContent, Card } from "@/components/ui/card"
+import ThemeToggle from "../components/ui/ThemeToggle"; // Adjust the path as needed
+import PasswordInput from "@/components/ui/PasswordInput";
+import { useRouter } from 'next/navigation';
+import random from 'lodash.random'; // Assuming lodash for random choice
 
 const big = {
   width: '200%',
@@ -99,16 +103,20 @@ const main = {
 };
 
 export default function Home() {
-  // async function onSubmit(event: FormEvent<HTMLFormElement>) {
-  //   event.preventDefault();
-  //   sessionStorage.setItem('username', event.currentTarget.email.value);
-  //   const router = useRouter();
-  //   router.push('/dashboard');
-  // };
+const router = useRouter();
+async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    sessionStorage.setItem('username', event.currentTarget.email.value);
+    // const routes = ['/dashboard', '/dashboard2', '/dashboard3', '/dashboard4']
+    // const route = routes[random(1,4)];
+    // window.alert(route);
+    router.push('/dashboard');
+  };
   return (
     <>
-    <main style={main} className="flex min-h-screen flex-col items-center justify-between">
-        <form className="flex flex-col min-h-screen items-center justify-center space-y-4 p-4">
+    <main style={main} className="dark-mode flex min-h-screen flex-col items-center justify-between">
+    <ThemeToggle /> {/* Include the theme toggle button */}
+        <form onSubmit={onSubmit} className="flex flex-col min-h-screen items-center justify-center space-y-4 p-4">
           <div className="w-full max-w-sm space-y-4">
             <div style={fingerprint} className="w-12 h-12 rounded-full border-4 border-gray-100 dark:border-gray-800">
               <img
@@ -131,22 +139,12 @@ export default function Home() {
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" placeholder="felicia@dhs.gov" required type="email" />
               </div>
-              <div className="space-y-2">
-                <Label htmlFor="password">Password</Label>
-                <Input id="password" required type="password" />
-              </div>
+                <PasswordInput />
               <Button variant={'outline'} type="submit" className="w-full">Sign in</Button>
             </div>
           </div>
         </form>
     </main>
-    {/* <script>
-      document.querySelector('form')?.addEventListener('submit', function(event: Event) {
-        event.preventDefault();
-        sessionStorage.setItem('username', event.currentTarget.email.value);
-        window.location.href = '/dashboard';
-      });
-    </script> */}
     </>
   );
 }
