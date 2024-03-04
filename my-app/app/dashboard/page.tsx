@@ -3,30 +3,14 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { CardContent, Card } from "@/components/ui/card"
 import Footer from "@/components/Footer"
+import { Header } from "@/components/header";
 
 export default function Dashboard() {
   return (
-    <div className="grid min-h-[600px] items-center justify-center gap-4 px-4 text-center md:px-6">
-      <div className="flex flex-col items-center gap-2">
-        <img
-          alt="Logo"
-          className="rounded-lg"
-          height="80"
-          src="/placeholder.svg"
-          style={{
-            aspectRatio: "80/80",
-            objectFit: "cover",
-          }}
-          width="80"
-        />
-        <h1 className="text-3xl font-bold">Welcome to the Dashboard</h1>
-      </div>
-      <div className="mx-auto w-full max-w-sm space-y-4">
-        <div className="space-y-2">
-          <Label htmlFor="search">Search</Label>
-          <Input id="search" placeholder="Search for apps..." />
-        </div>
-      </div>
+    <>
+    <Header />
+    <main className="grid min-h-[600px] items-center justify-center gap-4 px-4 text-center md:px-6">
+      <h1 className="text-3xl font-bold">My Applications</h1>
       <div className="grid w-full grid-cols-1 items-stretch justify-center gap-6 md:grid-cols-3 md:gap-0">
         <Card className="w-full max-w-xs">
           <CardContent className="p-4 flex flex-col items-center justify-center space-y-2">
@@ -50,8 +34,9 @@ export default function Dashboard() {
           </CardContent>
         </Card>
       </div>
-      <Footer />
-    </div>
+    </main>
+          <Footer />
+          </>
   )
 }
 

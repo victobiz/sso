@@ -13,11 +13,15 @@ const Footer = () => {
   ];
 
   return (
-    <footer>
+    <footer className="text-center">
       <ul style={{
-            display: 'flex',
-            gap: '1em'
-      }}>
+          display: 'grid',
+          gap: '1em',
+          gridTemplateColumns: '1fr 1fr 1fr 1fr',
+          justifyContent: 'space-around',
+          margin: 'auto',
+          maxWidth: '400px',
+        }}>
         {dashboardRoutes.map((route) => (
           <li key={route.path}>
             <Link href={route.path}>
