@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link"
 import Footer from "@/components/Footer"
-import { Header } from "@/components/header";
+import Header from "@/components/header";
 
 export default function Tiles() {
   return (
@@ -21,17 +21,7 @@ export default function Tiles() {
                 href="#"
               >
                 <div className="aspect-[1/1] w-full overflow-hidden rounded-lg">
-                  <img
-                    alt="App"
-                    className="object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "150/150",
-                      objectFit: "cover",
-                    }}
-                    width="150"
-                  />
+
                 </div>
                 <span className="text-sm font-medium">App One</span>
               </Link>
@@ -40,17 +30,6 @@ export default function Tiles() {
                 href="#"
               >
                 <div className="aspect-[1/1] w-full overflow-hidden rounded-lg">
-                  <img
-                    alt="App"
-                    className="object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "150/150",
-                      objectFit: "cover",
-                    }}
-                    width="150"
-                  />
                 </div>
                 <span className="text-sm font-medium">App Two</span>
               </Link>
@@ -59,17 +38,6 @@ export default function Tiles() {
                 href="#"
               >
                 <div className="aspect-[1/1] w-full overflow-hidden rounded-lg">
-                  <img
-                    alt="App"
-                    className="object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "150/150",
-                      objectFit: "cover",
-                    }}
-                    width="150"
-                  />
                 </div>
                 <span className="text-sm font-medium">App Three</span>
               </Link>
@@ -78,17 +46,6 @@ export default function Tiles() {
                 href="#"
               >
                 <div className="aspect-[1/1] w-full overflow-hidden rounded-lg">
-                  <img
-                    alt="App"
-                    className="object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "150/150",
-                      objectFit: "cover",
-                    }}
-                    width="150"
-                  />
                 </div>
                 <span className="text-sm font-medium">App Four</span>
               </Link>
@@ -97,17 +54,6 @@ export default function Tiles() {
                 href="#"
               >
                 <div className="aspect-[1/1] w-full overflow-hidden rounded-lg">
-                  <img
-                    alt="App"
-                    className="object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "150/150",
-                      objectFit: "cover",
-                    }}
-                    width="150"
-                  />
                 </div>
                 <span className="text-sm font-medium">App Five</span>
               </Link>

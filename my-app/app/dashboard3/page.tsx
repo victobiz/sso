@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link"
 import Footer from "@/components/Footer"
-import { Header } from "@/components/header";
+import Header from "@/components/header";
 
 export default function Heavy() {
   return (
@@ -18,13 +18,6 @@ export default function Heavy() {
             <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-4">
               <div className="group flex flex-col w-full items-start rounded-lg overflow-hidden border border-gray-200 border-gray-100 dark:border-gray-800 transition-all hover:shadow-lg dark:border-gray-800">
                 <Link className="aspect-[1/1] w-full overflow-hidden group-inset-0" href="#">
-                  <img
-                    alt="Image"
-                    className="aspect-[1/1] object-cover group-hover:scale-110 transition-transform"
-                    height="500"
-                    src="/placeholder.svg"
-                    width="500"
-                  />
                   <span className="sr-only">View App</span>
                 </Link>
                 <div className="p-4 w-full">
@@ -43,13 +36,6 @@ export default function Heavy() {
               </div>
               <div className="group flex flex-col w-full items-start rounded-lg overflow-hidden border border-gray-200 border-gray-100 dark:border-gray-800 transition-all hover:shadow-lg dark:border-gray-800">
                 <Link className="aspect-[1/1] w-full overflow-hidden group-inset-0" href="#">
-                  <img
-                    alt="Image"
-                    className="aspect-[1/1] object-cover group-hover:scale-110 transition-transform"
-                    height="500"
-                    src="/placeholder.svg"
-                    width="500"
-                  />
                   <span className="sr-only">View App</span>
                 </Link>
                 <div className="p-4 w-full">
@@ -68,13 +54,6 @@ export default function Heavy() {
               </div>
               <div className="group flex flex-col w-full items-start rounded-lg overflow-hidden border border-gray-200 border-gray-100 dark:border-gray-800 transition-all hover:shadow-lg dark:border-gray-800">
                 <Link className="aspect-[1/1] w-full overflow-hidden group-inset-0" href="#">
-                  <img
-                    alt="Image"
-                    className="aspect-[1/1] object-cover group-hover:scale-110 transition-transform"
-                    height="500"
-                    src="/placeholder.svg"
-                    width="500"
-                  />
                   <span className="sr-only">View App</span>
                 </Link>
                 <div className="p-4 w-full">
@@ -93,13 +72,6 @@ export default function Heavy() {
               </div>
               <div className="group flex flex-col w-full items-start rounded-lg overflow-hidden border border-gray-200 border-gray-100 dark:border-gray-800 transition-all hover:shadow-lg dark:border-gray-800">
                 <Link className="aspect-[1/1] w-full overflow-hidden group-inset-0" href="#">
-                  <img
-                    alt="Image"
-                    className="aspect-[1/1] object-cover group-hover:scale-110 transition-transform"
-                    height="500"
-                    src="/placeholder.svg"
-                    width="500"
-                  />
                   <span className="sr-only">View App</span>
                 </Link>
                 <div className="p-4 w-full">
@@ -118,13 +90,6 @@ export default function Heavy() {
               </div>
               <div className="group flex flex-col w-full items-start rounded-lg overflow-hidden border border-gray-200 border-gray-100 dark:border-gray-800 transition-all hover:shadow-lg dark:border-gray-800">
                 <Link className="aspect-[1/1] w-full overflow-hidden group-inset-0" href="#">
-                  <img
-                    alt="Image"
-                    className="aspect-[1/1] object-cover group-hover:scale-110 transition-transform"
-                    height="500"
-                    src="/placeholder.svg"
-                    width="500"
-                  />
                   <span className="sr-only">View App</span>
                 </Link>
                 <div className="p-4 w-full">
@@ -143,13 +108,6 @@ export default function Heavy() {
               </div>
               <div className="group flex flex-col w-full items-start rounded-lg overflow-hidden border border-gray-200 border-gray-100 dark:border-gray-800 transition-all hover:shadow-lg dark:border-gray-800">
                 <Link className="aspect-[1/1] w-full overflow-hidden group-inset-0" href="#">
-                  <img
-                    alt="Image"
-                    className="aspect-[1/1] object-cover group-hover:scale-110 transition-transform"
-                    height="500"
-                    src="/placeholder.svg"
-                    width="500"
-                  />
                   <span className="sr-only">View App</span>
                 </Link>
                 <div className="p-4 w-full">

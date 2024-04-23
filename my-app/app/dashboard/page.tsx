@@ -3,7 +3,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { CardContent, Card } from "@/components/ui/card"
 import Footer from "@/components/Footer"
-import { Header } from "@/components/header";
+import Header from "@/components/header";
 
 export default function Dashboard() {
   return (
@@ -41,7 +41,7 @@ export default function Dashboard() {
 }
 
 
-function BarChartIcon(props) {
+function BarChartIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -63,7 +63,7 @@ function BarChartIcon(props) {
 }
 
 
-function CodeIcon(props) {
+function CodeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

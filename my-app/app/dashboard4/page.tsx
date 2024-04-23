@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link"
 import Footer from "@/components/Footer"
-import { Header } from "@/components/header";
+import Header from "@/components/header";
 
 export default function Component() {
   return (
@@ -20,17 +20,6 @@ export default function Component() {
                 target="_blank"
               >
                 <div className="flex items-center gap-4">
-                  <img
-                    alt="Image"
-                    className="rounded-lg"
-                    height="64"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "64/64",
-                      objectFit: "cover",
-                    }}
-                    width="64"
-                  />
                   <div className="grid gap-1.5">
                     <h2 className="text-xl font-semibold-variant tracking-tight group-hover:underline">Application Name</h2>
                     <p className="text-sm font-normal-variant text-gray-500 dark:text-gray-400">
@@ -46,17 +35,6 @@ export default function Component() {
                 target="_blank"
               >
                 <div className="flex items-center gap-4">
-                  <img
-                    alt="Image"
-                    className="rounded-lg"
-                    height="64"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "64/64",
-                      objectFit: "cover",
-                    }}
-                    width="64"
-                  />
                   <div className="grid gap-1.5">
                     <h2 className="text-xl font-semibold-variant tracking-tight group-hover:underline">Application Name</h2>
                     <p className="text-sm font-normal-variant text-gray-500 dark:text-gray-400">
@@ -72,17 +50,6 @@ export default function Component() {
                 target="_blank"
               >
                 <div className="flex items-center gap-4">
-                  <img
-                    alt="Image"
-                    className="rounded-lg"
-                    height="64"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "64/64",
-                      objectFit: "cover",
-                    }}
-                    width="64"
-                  />
                   <div className="grid gap-1.5">
                     <h2 className="text-xl font-semibold-variant tracking-tight group-hover:underline">Application Name</h2>
                     <p className="text-sm font-normal-variant text-gray-500 dark:text-gray-400">
@@ -98,17 +65,6 @@ export default function Component() {
                 target="_blank"
               >
                 <div className="flex items-center gap-4">
-                  <img
-                    alt="Image"
-                    className="rounded-lg"
-                    height="64"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "64/64",
-                      objectFit: "cover",
-                    }}
-                    width="64"
-                  />
                   <div className="grid gap-1.5">
                     <h2 className="text-xl font-semibold-variant tracking-tight group-hover:underline">Application Name</h2>
                     <p className="text-sm font-normal-variant text-gray-500 dark:text-gray-400">
@@ -124,17 +80,6 @@ export default function Component() {
                 target="_blank"
               >
                 <div className="flex items-center gap-4">
-                  <img
-                    alt="Image"
-                    className="rounded-lg"
-                    height="64"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "64/64",
-                      objectFit: "cover",
-                    }}
-                    width="64"
-                  />
                   <div className="grid gap-1.5">
                     <h2 className="text-xl font-semibold-variant tracking-tight group-hover:underline">Application Name</h2>
                     <p className="text-sm font-normal-variant text-gray-500 dark:text-gray-400">

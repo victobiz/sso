@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import { FormEvent } from "react";
 import { useRouter } from 'next/navigation';
 
-export function Header() {
+function Header() {
   const router = useRouter();
   const filter = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -22,17 +22,6 @@ export function Header() {
       <div className="flex h-14 items-center border-b bg-gray-100 px-4 md:px-6 dark:bg-gray-800">
         <div className="flex items-center gap-2 mr-4 shrink-0">
           <div className="flex items-center h-8 w-8 rounded-full bg-gray-200 dark:bg-gray-900">
-            <img
-              alt="Acme Inc"
-              className="rounded-full"
-              height="32"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "32/32",
-                objectFit: "cover",
-              }}
-              width="32"
-            />
           </div>
           <Link className="font-bold hidden md:flex text-base dark:text-gray-50" href="#">
             TIES
@@ -56,7 +45,7 @@ export function Header() {
         </form>
         <div className="flex items-center ml-auto gap-4">
           <div className="flex items-center gap-2">
-            <div className="font-semibold">{sessionStorage.getItem('username')}</div>
+            <div className="font-semibold">{typeof window !== 'undefined' && window.sessionStorage.getItem('username')}</div>
           </div>
           <Button onClick={logout} size="icon" variant="ghost">
             <LogOutIcon className="w-4 h-4" />
@@ -110,3 +99,6 @@ function LogOutIcon(props: any) {
     </svg>
   )
 }
+
+
+export default Header;
